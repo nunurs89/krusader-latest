@@ -19,7 +19,8 @@ FROM alpine:3.10
 
 # Set the lang, you can also specify it as as environment variable through docker-compose.yml
 ENV LANG=fr_FR.UTF-8 \
-    LANGUAGE=fr_FR.UTF-8
+    LANGUAGE=fr_FR.UTF-8 \
+    PATH=/usr/glibc-compat/sbin:/usr/glibc-compat/bin:$PATH
     
     
 
